@@ -1,0 +1,11 @@
+<div class='row'>
+  <div class='col-xs-12'>
+    <h2><%= "#{@model}s search for '#{@content}'" %></h2>
+    <% if @model == "user" %>
+        <%= render 'users/index',users: @records %>
+      </div>
+    <% else %>
+      <%= render 'books/index', books: @records %>
+    <% end %>
+  </div>
+</div>
